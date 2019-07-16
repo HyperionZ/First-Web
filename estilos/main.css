@@ -1,0 +1,37 @@
+/*
+Glovals
+*/
+
+body {
+  /* Fuentes*/
+
+  font-family: "Charlie Text", sans-serif;
+  font-size: 15px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  background: #0079bf;
+}
+nav {
+  text-align: left;
+}
