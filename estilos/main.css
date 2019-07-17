@@ -1,37 +1,196 @@
 /*
-Glovals
+Globals
 */
+* {
+  box-sizing: border-box;
+}
 
 body {
-  /* Fuentes*/
-
-  font-family: "Charlie Text", sans-serif;
-  font-size: 15px;
+  /*Fuentes*/
+  font-family: arial;
+  font-size: 13px;
 }
 
 a {
-  color: #ffffff;
+  color: red;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+font-family: verdana; 
+margin-bottom: 20px; 
 }
 
 h1 {
   font-size: 24px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
   font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h3 {
   font-size: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-  background: #0079bf;
+p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
-nav {
-  text-align: left;
+
+b {
+  font-weight: bold;
+}
+
+/*
+Header
+*/
+header {
+  /*Color*/
+  background: brown;
+
+  /*Box model*/
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;    
+  padding: 20px;
+
+  /*
+  Positions
+  */
+  position: fixed;
+  top: 0;
+  z-index:1;
+}
+
+header a {
+  color: white;
+}
+
+header .logo {
+  font-size: 24px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+/*
+Main
+*/
+main {
+  margin-top: 64px;
+}
+
+/*
+banner
+*/
+.banner {
+  /*Positions*/
+  position: relative;
+
+  /*Box model*/
+  height: 300px;
+  overflow: hidden;
+}
+
+.banner img {
+  margin-top: -20%;
+  width: 100%;
+}
+
+.banner .text {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.banner .text h1,
+.banner .text p {
+  margin-bottom: 10px;
+}
+
+.banner .text a {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+
+/*
+CLUB
+*/
+.club {
+  background: #e6faff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.club .blog div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.club img {
+  margin-bottom: 10px;
+}
+
+/*
+Pets
+*/
+
+.pets {
+  text-align: center;
+  background: #e3e2ff;
+  padding: 20px 0;
+}
+
+.pets div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pets img {
+  margin-bottom: 10px;
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+
+/*
+Footer
+*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: brown;
+}
+
+footer a {
+  color: white;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li {
+  margin-left: 20px;
 }
